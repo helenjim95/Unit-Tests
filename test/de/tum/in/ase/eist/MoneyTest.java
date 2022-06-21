@@ -29,7 +29,6 @@ class MoneyTest {
 	void testInvalidAdd() {
 		Money m14USD = new Money(14, Currency.USD);
 		// Task 4: implement the test case
-		assertThrows(IllegalArgumentException.class, () -> {m12CHF.add(m14USD);
-		});
+		assertThrows(IllegalArgumentException.class, () -> { m12CHF.add(m14USD); });
 	}
 }
